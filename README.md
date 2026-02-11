@@ -28,6 +28,7 @@ Por último, la víctima, identificada en el sistema como **"POBRE ALMA EN PENA"
 
 ## III-) Parámetros del Ataque y Funcionamiento.
 El script **ATAQUE.py** se basa en la generación de paquetes ARP (con un código de operación **op=2**) que se mandan cada **dos segundos** para impedir que el sistema operativo modifique o expire la caché de los dispositivos. Los parámetros importantes son el **hwsrc**, que es donde se inserta la dirección MAC auténtica del atacante (**50:0a:1e:00:03:00**) para obligar al conmutador a desviar las tramas hacia su puerto físico; el **psrc** (IP que el atacante quiere reemplazar); y el **pdst** (IP de destino del paquete).
+
 ![Uploading Screenshot 2026-02-05 221328.png…]()
 <img width="280" height="88" alt="Screenshot 2026-02-05 221442" src="https://github.com/user-attachments/assets/80c115aa-de1a-44cd-9b17-b154082759c2" />
 
